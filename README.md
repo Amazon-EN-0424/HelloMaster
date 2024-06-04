@@ -41,8 +41,8 @@ In this exercise, you will practice different strategies of inheritance using Sp
 4. Create repository interfaces for each entity using Spring Data JPA.
 
 5. Create a `CharacterService` class with the following methods:
-   - `createPlayer(String name, String characterClass, String race, int level)`: Creates a new player character.
-   - `createMonster(String name, String monsterType, int hitPoints, int level)`: Creates a new monster character.
+   - `createPlayer(String name, String characterClass, String race, int level)`: Creates and save a new player character.
+   - `createMonster(String name, String monsterType, int hitPoints, int level)`: Creates and save new monster character.
    - `equipWeapon(Long characterId, Long weaponId)`: Equips a weapon to a character. This method should only log a message saying "Weapon equipped" without modifying the database.
    - `equipArmor(Long characterId, Long armorId)`: Equips armor to a character. This method should only log a message saying "Armor equipped" without modifying the database.
    - `attackWithCharacter(Long characterId)`: Invokes the `attack()` method of a character.
@@ -59,11 +59,5 @@ In this exercise, you will practice different strategies of inheritance using Sp
 
 - Implement a `SpecialAbility` abstract class with a `perform()` method, and create subclasses `MagicSpell` and `PhysicalAbility` that extend `SpecialAbility`. Use the table-per-class strategy for this hierarchy.
 - Extend the `CharacterService` to include methods for assigning special abilities to characters and invoking their `perform()` methods.
-
-## Submission
-
-- Create a GitHub repository for your project and push your code.
-- Provide a README file with instructions on how to run the application and test the functionality.
-- Submit the link to your GitHub repository.
 
 Embark on this coding adventure and may your inheritance strategies be victorious!
