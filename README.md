@@ -1,5 +1,6 @@
 # Spring JPA and Inheritance: Dungeons and Dragons Edition
 
+![](./dd.png)
 In this exercise, you will practice different strategies of inheritance using Spring JPA in the context of a Dungeons and Dragons game. You will work with entities representing characters and items in the game.
 
 ## Instructions
